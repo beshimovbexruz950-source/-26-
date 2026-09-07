@@ -1,14 +1,15 @@
-# Behruz - Shaxsiy Veb-sayt (Raqamli Vizitka)
+# Beshimov Behruz Murtazo o'g'li - Shaxsiy Veb-sayt (Raqamli Vizitka)
 
-Ushbu loyiha farmatsevt va biznes menejeri **Behruz** uchun maxsus yaratilgan toza, zamonaviy va nafis shaxsiy veb-saytdir. Sayt oq rang va nozik zumrad yashil urg'ular bilan ishlangan hamda to'liq o'zbek tilida tayyorlangan.
+Ushbu loyiha farmatsevt va biznes menejeri **Beshimov Behruz Murtazo o'g'li** uchun maxsus yaratilgan toza, zamonaviy va nafis shaxsiy veb-saytdir. Sayt oq rang va nozik zumrad yashil urg'ular bilan ishlangan hamda to'liq o'zbek tilida tayyorlangan.
 
 ---
 
 ## 🌟 Saytning asosiy xususiyatlari
 
 1. **Bosh sahifa (Hero)**:
-   - Ism, kasbiy unvon va shior: *"Sog'liqni saqlash, biznes va uzluksiz ta'lim orqali yaxshiroq kelajak yaratish sari."*
-   - Professional portret illyustratsiyasi va "Ishonchli xizmat" ko'rsatkichi.
+   - To'liq ism, kasbiy unvon va shior: *"Sog'liqni saqlash, biznes va uzluksiz ta'lim orqali yaxshiroq kelajak yaratish sari."*
+   - Haqiqiy professional fotosurat (`profile.jpg`) va "Ishonchli xizmat" ko'rsatkichi.
+   - Tug'ilgan sana ko'rsatkichi (10.11.1994).
    - "Men haqimda" va "Bog'lanish" tezkor tugmalari.
 
 2. **Men haqimda (About Me)**:
@@ -34,30 +35,13 @@ Ushbu loyiha farmatsevt va biznes menejeri **Behruz** uchun maxsus yaratilgan to
    - Insonlarga yordam berish
 
 6. **Bog'lanish (Digital Business Card)**:
-   - Telegram orqali to'g'ridan-to'g'ri yozish.
-   - Telefon raqamga qo'ng'iroq qilish va uni bir klik bilan nusxalash (copy).
-   - Elektron pochtaga xat yozish va uni nusxalash.
+   - Telegram: [@Bekk2225](https://t.me/Bekk2225)
+   - Telefon: +998 (99) 407-22-25 (bir klik bilan nusxalash)
+   - Email: Beshimovbexruz950@gmail.com (bir klik bilan nusxalash)
 
 ---
 
 ## 🚀 Saytni ishga tushirish
 
-Hech qanday qo'shimcha dastur o'rnatish shart emas!
+Papkadagi `index.html` faylini istalgan brauzerda ochish kifoya. Sayt barcha qurilmalarda (kompyuter, planshet, mobil) to'liq moslashuvchan ishlaydi.
 
-1. Papkadagi `index.html` faylini istalgan brauzerda (Google Chrome, Microsoft Edge, Safari, Firefox) ikki marta bosib oching.
-2. Sayt kompyuterda ham, planshet va smartfonlarda ham to'liq moslashuvchan (responsive) holatda chiroyli ko'rinadi.
-
----
-
-## ✏️ O'z ma'lumotlaringizni o'zgartirish
-
-- **Aloqa ma'lumotlari (Telegram, Telefon, Email)**:
-  `index.html` faylini ochib, quyidagi qatorlarni o'zgartirishingiz mumkin:
-  - Telegram: `https://t.me/behruz` va `@behruz` o'rniga o'z profilingizni yozing.
-  - Telefon: `tel:+998901234567` va ko'rinib turgan matnni o'z raqamingizga almashtiring.
-  - Email: `behruz@example.com` o'rniga o'z pochtangizni kiriting.
-
-- **O'z rasmingizni qo'yish (ixtiyoriy)**:
-  Agar o'zingizning haqiqiy fotosuratingizni qo'ymoqchi bo'lsangiz:
-  1. Rasmingizni ushbu papkaga masalan `profile.jpg` nomi bilan saqlang.
-  2. `index.html` dagi `<div class="profile-image-wrapper">` ichidagi `<svg ...>` o'rniga `<img src="profile.jpg" alt="Behruz" style="width: 100%; height: 320px; object-fit: cover;">` deb qo'yishingiz mumkin.
