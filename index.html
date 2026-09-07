@@ -3,1949 +3,797 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Beshimov Behruz Murtazo o'g'li - Farmatsevt va Biznes Menejer. Sog'liqni saqlash, biznes va zamonaviy texnologiyalar.">
-  <meta name="keywords" content="Beshimov Behruz, Behruz Murtazo o'g'li, farmatsevt, biznes menejer, O'zbekiston, sog'liqni saqlash, farmatsevtika">
-  <title>Beshimov Behruz | Farmatsevt & Biznes Menejer</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <!-- Google Fonts: Plus Jakarta Sans -->
+  <title>Jasur Turdiev | Farmatsevtika va tibbiy texnologiyalar tadbirkori</title>
+  <meta name="description" content="Jasur Turdiev — «Jasmina Ulug‘bek Farm» va «JASPHARM» korxonalari asoschisi. O‘zbekistonda kardioxirurgiya ta'minoti va sog‘liqni saqlash sohasida 20 yillik tajribaga ega yetakchi tadbirkor.">
+  <meta name="keywords" content="Jasur Turdiev, JASPHARM, Jasmina Ulug‘bek Farm, O‘zbekiston tibbiyoti, kardioxirurgiya ta'minoti, farmatsevtika">
+  <meta name="author" content="Jasur Turdiev">
+
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230a192f'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='serif' font-size='52' font-weight='bold' fill='%23dfc27a'>JT</text></svg>">
+
+  <!-- Google Fonts: Editorial Serif + Clean Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Custom Stylesheet -->
-  <style>
-/* ==========================================================================
-   Behruz - Shaxsiy Veb-Sayt (style.css)
-   Dizayn: Toza, zamonaviy oq uslub va nozik zumrad yashil urg'ular
-   ========================================================================== */
-
-/* --- 1. CSS O'zgaruvchilari va Asosiy Sozlamalar --- */
-:root {
-  /* Ranglar */
-  --bg-body: #ffffff;
-  --bg-subtle: #f8fafc;
-  --bg-tint: #f0fdf4;
-  --bg-card: #ffffff;
-  --bg-glass: rgba(255, 255, 255, 0.85);
-
-  --color-primary: #059669;        /* Zumrad yashil */
-  --color-primary-hover: #047857;  /* To'qroq yashil */
-  --color-primary-light: #ecfdf5;  /* O'ta och yashil fon */
-  --color-primary-border: #a7f3d0; /* Nozik yashil chegara */
-  --color-primary-glow: rgba(16, 185, 129, 0.15);
-
-  --color-text-main: #0f172a;      /* Qora-kulrang (Slate 900) */
-  --color-text-body: #334155;      /* Asosiy matn (Slate 700) */
-  --color-text-muted: #64748b;     /* Yordamchi matn (Slate 500) */
-  --color-text-light: #94a3b8;     /* Xira matn (Slate 400) */
-
-  --border-color: #e2e8f0;
-  --border-color-light: #f1f5f9;
-
-  /* Soyalar */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
-  --shadow-card: 0 4px 20px -2px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
-  --shadow-card-hover: 0 16px 32px -4px rgba(5, 150, 105, 0.1), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
-  --shadow-glow: 0 0 35px -5px rgba(16, 185, 129, 0.25);
-
-  /* Burchak radiusi */
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --radius-xl: 28px;
-  --radius-full: 9999px;
-
-  /* Shriftlar va O'tishlar */
-  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Reset */
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  font-family: var(--font-family);
-  background-color: var(--bg-body);
-  color: var(--color-text-body);
-  line-height: 1.65;
-  font-size: 16px;
-  font-weight: 400;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Konteyner */
-.container {
-  width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-/* Umumiy bo'limlar */
-.section {
-  padding: 88px 0;
-  position: relative;
-}
-
-.section-header {
-  text-align: center;
-  max-width: 640px;
-  margin: 0 auto 52px auto;
-}
-
-.section-tag {
-  display: inline-block;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
-  padding: 4px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 12px;
-}
-
-.section-title {
-  font-size: 2.25rem;
-  font-weight: 800;
-  color: var(--color-text-main);
-  letter-spacing: -0.02em;
-  margin-bottom: 12px;
-}
-
-.section-line {
-  width: 48px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--color-primary), #34d399);
-  border-radius: var(--radius-full);
-  margin: 0 auto 16px auto;
-}
-
-.section-description {
-  color: var(--color-text-muted);
-  font-size: 1.05rem;
-  line-height: 1.6;
-}
-
-/* --- 2. Xabarnoma (Toast) --- */
-.toast {
-  position: fixed;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%) translateY(100px);
-  background: var(--color-text-main);
-  color: #ffffff;
-  padding: 12px 24px;
-  border-radius: var(--radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  z-index: 9999;
-  opacity: 0;
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.toast.show {
-  transform: translateX(-50%) translateY(0);
-  opacity: 1;
-}
-
-/* --- 3. Navigatsiya (Navbar) --- */
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background: var(--bg-glass);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border-color-light);
-  z-index: 1000;
-  transition: box-shadow var(--transition-fast), background var(--transition-fast);
-}
-
-.navbar.scrolled {
-  box-shadow: var(--shadow-sm);
-  background: rgba(255, 255, 255, 0.96);
-}
-
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
-}
-
-/* Brand */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-
-.brand-avatar {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: linear-gradient(135deg, var(--color-primary), #10b981);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.15rem;
-  box-shadow: 0 3px 8px rgba(5, 150, 105, 0.25);
-}
-
-.brand-text {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--color-text-main);
-  letter-spacing: -0.02em;
-}
-
-.brand-text .dot {
-  color: var(--color-primary);
-}
-
-/* Nav Menu */
-.nav-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 8px;
-}
-
-.nav-link {
-  text-decoration: none;
-  font-size: 0.925rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  padding: 8px 16px;
-  border-radius: var(--radius-full);
-  transition: color var(--transition-fast), background-color var(--transition-fast);
-}
-
-.nav-link:hover {
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
-}
-
-.nav-link.active {
-  color: var(--color-primary);
-  background-color: var(--color-primary-light);
-}
-
-.nav-link-contact {
-  background: var(--color-primary-light);
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary-border);
-}
-
-.nav-link-contact:hover {
-  background: var(--color-primary);
-  color: #ffffff;
-  border-color: var(--color-primary);
-}
-
-/* Hamburger */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  padding: 0;
-}
-
-.nav-toggle .bar {
-  width: 20px;
-  height: 2px;
-  background-color: var(--color-text-main);
-  border-radius: 2px;
-  transition: transform var(--transition-fast), opacity var(--transition-fast);
-}
-
-.nav-toggle.open .bar:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.nav-toggle.open .bar:nth-child(2) {
-  opacity: 0;
-}
-.nav-toggle.open .bar:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
-/* --- 4. Bosh Sahifa (Hero) --- */
-.hero-section {
-  padding-top: 60px;
-  padding-bottom: 90px;
-  background: radial-gradient(circle at 80% 20%, rgba(236, 253, 245, 0.8) 0%, rgba(255, 255, 255, 0) 60%),
-              radial-gradient(circle at 10% 80%, rgba(240, 253, 244, 0.6) 0%, rgba(255, 255, 255, 0) 50%);
-}
-
-.hero-container {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: center;
-  gap: 56px;
-}
-
-/* Status Pill */
-.badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #ffffff;
-  border: 1px solid var(--color-primary-border);
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: 22px;
-  box-shadow: var(--shadow-sm);
-}
-
-.status-indicator {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: #10b981;
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
-  animation: pulse-green 2s infinite;
-}
-
-@keyframes pulse-green {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
-  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-
-.hero-title {
-  font-size: 3.25rem;
-  font-weight: 800;
-  line-height: 1.15;
-  color: var(--color-text-main);
-  letter-spacing: -0.03em;
-  margin-bottom: 12px;
-}
-
-.hero-title .highlight {
-  color: var(--color-primary);
-  position: relative;
-  display: inline-block;
-}
-
-.hero-subtitle {
-  font-size: 1.45rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  margin-bottom: 20px;
-}
-
-.hero-quote {
-  font-size: 1.125rem;
-  color: var(--color-text-body);
-  max-width: 520px;
-  line-height: 1.7;
-  margin-bottom: 34px;
-  padding-left: 16px;
-  border-left: 3px solid var(--color-primary);
-  font-style: italic;
-}
-
-/* Tugmalar */
-.hero-actions {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 13px 26px;
-  border-radius: var(--radius-full);
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  cursor: pointer;
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
-  border: 1px solid transparent;
-}
-
-.btn-primary {
-  background: var(--color-primary);
-  color: #ffffff;
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.3);
-}
-
-.btn-primary:hover {
-  background: var(--color-primary-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.38);
-}
-
-.btn-secondary {
-  background: #ffffff;
-  color: var(--color-text-main);
-  border-color: var(--border-color);
-  box-shadow: var(--shadow-sm);
-}
-
-.btn-secondary:hover {
-  border-color: var(--color-primary-border);
-  color: var(--color-primary);
-  background: var(--color-primary-light);
-  transform: translateY(-2px);
-}
-
-/* Hero Highlights Chips */
-.hero-highlights {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-
-.highlight-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: 500;
-}
-
-.highlight-divider {
-  color: var(--color-text-light);
-}
-
-/* Hero Visual / Avatar Card */
-.hero-visual {
-  display: flex;
-  justify-content: center;
-}
-
-.profile-card {
-  position: relative;
-  width: 100%;
-  max-width: 340px;
-}
-
-.profile-glow {
-  position: absolute;
-  inset: -15px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
-  filter: blur(20px);
-  z-index: 1;
-}
-
-.profile-frame {
-  position: relative;
-  z-index: 2;
-  background: #ffffff;
-  border-radius: var(--radius-xl);
-  padding: 14px;
-  border: 1px solid var(--border-color);
-  box-shadow: var(--shadow-card);
-  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.profile-frame:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card-hover);
-}
-
-.profile-image-wrapper {
-  position: relative;
-  border-radius: calc(var(--radius-xl) - 4px);
-  overflow: hidden;
-  background: var(--bg-tint);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.profile-svg-placeholder {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.profile-photo {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  object-position: center 12%;
-  display: block;
-  border-radius: calc(var(--radius-xl) - 4px);
-  transition: transform var(--transition-normal);
-}
-
-.profile-frame:hover .profile-photo {
-  transform: scale(1.03);
-}
-
-/* Floating Badge */
-.floating-badge {
-  position: absolute;
-  bottom: -18px;
-  right: -14px;
-  z-index: 3;
-  background: #ffffff;
-  border: 1px solid var(--color-primary-border);
-  border-radius: var(--radius-lg);
-  padding: 10px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  box-shadow: 0 10px 25px -4px rgba(5, 150, 105, 0.18);
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
-
-.floating-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: var(--color-primary-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.floating-info {
-  display: flex;
-  flex-direction: column;
-}
-
-.floating-title {
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-}
-
-.floating-sub {
-  font-size: 0.725rem;
-  color: var(--color-text-muted);
-}
-
-/* --- 5. Men Haqimda (About Me) --- */
-.about-section {
-  background-color: var(--bg-subtle);
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 32px;
-  align-items: stretch;
-}
-
-.about-card {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 40px;
-  box-shadow: var(--shadow-card);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.about-lead {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.lead-icon-box {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  background: var(--color-primary-light);
-  border: 1px solid var(--color-primary-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.about-heading {
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  letter-spacing: -0.01em;
-}
-
-.about-text {
-  font-size: 1.05rem;
-  color: var(--color-text-body);
-  line-height: 1.75;
-  margin-bottom: 18px;
-}
-
-.about-text:last-child {
-  margin-bottom: 0;
-}
-
-.about-text strong {
-  color: var(--color-text-main);
-  font-weight: 600;
-}
-
-/* Feature Boxes */
-.about-features {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  justify-content: center;
-}
-
-.feature-box {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 24px;
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.feature-box:hover {
-  transform: translateX(4px);
-  border-color: var(--color-primary-border);
-  box-shadow: var(--shadow-card);
-}
-
-.feature-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: var(--color-primary-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.feature-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 4px;
-}
-
-.feature-desc {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  line-height: 1.55;
-}
-
-/* --- 6. Faoliyatim (My Work) --- */
-.work-section {
-  background-color: var(--bg-body);
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-}
-
-.work-card {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-xl);
-  padding: 36px 30px;
-  box-shadow: var(--shadow-card);
-  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-
-.work-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: transparent;
-  transition: background-color var(--transition-normal);
-}
-
-.work-card:hover {
-  transform: translateY(-6px);
-  border-color: var(--color-primary-border);
-  box-shadow: var(--shadow-card-hover);
-}
-
-.work-card:hover::before {
-  background: linear-gradient(90deg, var(--color-primary), #34d399);
-}
-
-.card-icon-wrapper {
-  width: 60px;
-  height: 60px;
-  border-radius: 16px;
-  background: var(--color-primary-light);
-  border: 1px solid var(--color-primary-border);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 22px;
-}
-
-.card-badge {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--color-primary);
-  background: var(--color-primary-light);
-  padding: 4px 10px;
-  border-radius: var(--radius-full);
-  margin-bottom: 12px;
-}
-
-.card-title {
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 12px;
-  letter-spacing: -0.01em;
-}
-
-.card-text {
-  font-size: 0.95rem;
-  color: var(--color-text-muted);
-  line-height: 1.65;
-  margin-bottom: 24px;
-  flex-grow: 1;
-}
-
-.card-list {
-  list-style: none;
-  border-top: 1px solid var(--border-color-light);
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.card-list li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.875rem;
-  color: var(--color-text-body);
-  font-weight: 500;
-}
-
-/* --- 7. Maqsadlarim (My Goals) --- */
-.goals-section {
-  background-color: var(--bg-tint);
-  border-top: 1px solid #e6f9ed;
-  border-bottom: 1px solid #e6f9ed;
-}
-
-.goals-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-}
-
-.goal-item {
-  background: #ffffff;
-  border: 1px solid #d1fae5;
-  border-radius: var(--radius-lg);
-  padding: 28px 22px;
-  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.04);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
-  position: relative;
-}
-
-.goal-item:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-primary);
-  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
-}
-
-.goal-number {
-  font-size: 0.75rem;
-  font-weight: 800;
-  color: #10b981;
-  background: var(--color-primary-light);
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: var(--radius-full);
-  margin-bottom: 14px;
-}
-
-.goal-icon-box {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: var(--color-primary-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.goal-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 8px;
-}
-
-.goal-desc {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  line-height: 1.55;
-}
-
-/* --- 8. Qadriyatlarim (My Values) --- */
-.values-section {
-  background-color: var(--bg-body);
-}
-
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.value-card {
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 32px 24px;
-  text-align: center;
-  box-shadow: var(--shadow-card);
-  transition: transform var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
-}
-
-.value-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--color-primary-border);
-  box-shadow: var(--shadow-card-hover);
-}
-
-.value-icon-circle {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  background: var(--color-primary-light);
-  border: 2px solid #d1fae5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px auto;
-}
-
-.value-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  margin-bottom: 10px;
-}
-
-.value-description {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-  line-height: 1.6;
-}
-
-/* --- 9. Bog'lanish (Contact - Digital Business Card) --- */
-.contact-section {
-  background: radial-gradient(circle at 50% 100%, rgba(236, 253, 245, 0.9) 0%, rgba(255, 255, 255, 0) 70%);
-  padding-bottom: 100px;
-}
-
-.contact-wrapper {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-.digital-card {
-  background: #ffffff;
-  border: 1px solid var(--color-primary-border);
-  border-radius: var(--radius-xl);
-  padding: 36px;
-  box-shadow: var(--shadow-card-hover);
-  position: relative;
-}
-
-.card-header-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-color-light);
-  padding-bottom: 24px;
-  margin-bottom: 28px;
-}
-
-.card-brand {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.avatar-mini {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, var(--color-primary), #10b981);
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-size: 1.35rem;
-}
-
-.card-user-name {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--color-text-main);
-  line-height: 1.2;
-}
-
-.card-user-role {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  font-weight: 500;
-}
-
-.card-location-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-color);
-  padding: 6px 12px;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--color-text-muted);
-}
-
-/* Contact Links Grid */
-.contact-links-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 28px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 20px;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  transition: background-color var(--transition-fast), border-color var(--transition-fast);
-}
-
-.contact-item:hover {
-  background: var(--color-primary-light);
-  border-color: var(--color-primary-border);
-}
-
-.contact-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  background: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  color: var(--color-primary);
-  border: 1px solid var(--border-color);
-}
-
-.tg-icon { color: #0284c7; }
-.phone-icon { color: var(--color-primary); }
-.email-icon { color: #d97706; }
-
-.contact-details {
-  flex-grow: 1;
-  padding: 0 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-label {
-  font-size: 0.775rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--color-text-light);
-}
-
-.contact-value.link {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--color-text-main);
-  text-decoration: none;
-  transition: color var(--transition-fast);
-}
-
-.contact-value.link:hover {
-  color: var(--color-primary);
-}
-
-.btn-action {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: #ffffff;
-  border: 1px solid var(--border-color);
-  color: var(--color-text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all var(--transition-fast);
-}
-
-.btn-action:hover {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: #ffffff;
-  transform: scale(1.05);
-}
-
-.card-footer-note {
-  text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid var(--border-color-light);
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-
-/* --- 10. Footer --- */
-.footer {
-  background: #ffffff;
-  border-top: 1px solid var(--border-color);
-  padding: 36px 0;
-}
-
-.footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-name {
-  font-size: 1.15rem;
-  font-weight: 800;
-  color: var(--color-text-main);
-}
-
-.footer-name .dot {
-  color: var(--color-primary);
-}
-
-.footer-sub {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  padding-left: 10px;
-  border-left: 1px solid var(--border-color);
-}
-
-.footer-copy {
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-}
-
-/* --- 11. Moslashuvchanlik (Responsive Media Queries) --- */
-
-/* Planshet va o'rta ekranlar (992px gacha) */
-@media (max-width: 992px) {
-  .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 48px;
-  }
-
-  .badge-pill {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-quote {
-    margin-left: auto;
-    margin-right: auto;
-    border-left: none;
-    border-top: 2px solid var(--color-primary);
-    padding-left: 0;
-    padding-top: 12px;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-highlights {
-    justify-content: center;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .values-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Kichik ekranlar va smartfonlar (768px gacha) */
-@media (max-width: 768px) {
-  .section {
-    padding: 64px 0;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  /* Mobil Menyu */
-  .nav-toggle {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 72px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid var(--border-color);
-    box-shadow: var(--shadow-card);
-    padding: 24px;
-    display: none;
-    transition: all 0.3s ease;
-  }
-
-  .nav-menu.open {
-    display: block;
-  }
-
-  .nav-list {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
-  }
-
-  .nav-link {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    font-size: 1rem;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .values-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .footer-sub {
-    border-left: none;
-    padding-left: 0;
-  }
-
-  .digital-card {
-    padding: 24px 18px;
-  }
-
-  .card-header-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-  }
-}
-
-/* Juda kichik smartfonlar (480px gacha) */
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.15rem;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .floating-badge {
-    right: 0;
-    bottom: -24px;
-  }
-}
-
-</style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Toast Notification for Copy Actions -->
-  <div id="toast" class="toast" aria-live="polite">Nusxalandi!</div>
-
-  <!-- Header / Navigation -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand">
-        <span class="brand-avatar">B</span>
-        <span class="brand-text">Beshimov Behruz<span class="dot">.</span></span>
+  <!-- ========================================================================
+       SITE HEADER & NAVIGATION
+       ======================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Monogram Brand Mark -->
+      <a href="#home" class="brand" aria-label="Jasur Turdiev Home">
+        <div class="brand-monogram">JT</div>
+        <div class="brand-text">
+          <span class="brand-name">JASUR TURDIEV</span>
+          <span class="brand-tagline" data-i18n="nav_brand_tagline">Tibbiyot tadbirkori</span>
+        </div>
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="nav-menu" id="nav-menu">
+      <!-- Desktop & Mobile Navigation (Strictly 7 sections + Language Switcher) -->
+      <nav class="main-nav" id="mainNav" aria-label="Asosiy menyu">
         <ul class="nav-list">
-          <li><a href="#hero" class="nav-link active">Bosh sahifa</a></li>
-          <li><a href="#about" class="nav-link">Men haqimda</a></li>
-          <li><a href="#work" class="nav-link">Faoliyatim</a></li>
-          <li><a href="#goals" class="nav-link">Maqsadlarim</a></li>
-          <li><a href="#values" class="nav-link">Qadriyatlarim</a></li>
-          <li><a href="#contact" class="nav-link nav-link-contact">Bog'lanish</a></li>
+          <li><a href="#home" class="nav-link active" data-i18n="nav_home">Bosh sahifa</a></li>
+          <li><a href="#about" class="nav-link" data-i18n="nav_about">Men haqimda</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav_experience">Tajriba</a></li>
+          <li><a href="#companies" class="nav-link" data-i18n="nav_companies">Kompaniyalar</a></li>
+          <li><a href="#leadership" class="nav-link" data-i18n="nav_leadership">Rahbarlik</a></li>
+          <li><a href="#family" class="nav-link" data-i18n="nav_family">Oila</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Bog‘lanish</a></li>
         </ul>
+
+        <div class="header-actions">
+          <!-- Language Switcher: O'zbekcha / English -->
+          <div class="lang-switcher" aria-label="Tilni tanlash / Language selector">
+            <button type="button" class="lang-btn active" data-lang="uz" title="O‘zbek tili">O‘Z</button>
+            <span class="lang-divider">|</span>
+            <button type="button" class="lang-btn" data-lang="en" title="English language">EN</button>
+          </div>
+          <a href="#contact" class="btn btn-gold header-cta" data-i18n="nav_cta">Bog‘lanish</a>
+        </div>
       </nav>
 
       <!-- Mobile Hamburger Button -->
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menyuni ochish" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menyuni ochish" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
   </header>
 
-  <main>
-    <!-- 1. HERO SECTION -->
-    <section class="section hero-section" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge-pill">
-            <span class="status-indicator"></span>
-            <span>Farmatsevtika & Biznes Boshqaruvi</span>
+  <!-- ========================================================================
+       SECTION 1: HOME
+       ======================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-accent"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Text Column -->
+        <div class="hero-content fade-up">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span data-i18n="hero_badge">Sog‘liqni saqlash sohasida 20 yillik tajriba</span>
           </div>
-
+          
           <h1 class="hero-title">
-            Salom, men <span class="highlight">Behruz</span>
+            <span data-i18n="hero_title_p1">O‘zbekistonda zamonaviy tibbiyot va innovatsiyalarni rivojlantirish</span>
           </h1>
 
-          <p class="hero-subtitle">Beshimov Behruz Murtazo o'g'li — Farmatsevt & Biznes Menejer</p>
+          <p class="hero-role" data-i18n="hero_role">
+            Farmatsevtika va tibbiy texnologiyalar tadbirkori · <strong>Jasmina Ulug‘bek Farm</strong> va <strong>JASPHARM</strong> asoschisi
+          </p>
 
-          <p class="hero-quote">
-            "Sog'liqni saqlash, biznes va uzluksiz ta'lim orqali yaxshiroq kelajak yaratish sari."
+          <p class="hero-description" data-i18n="hero_description">
+            Jasur Turdiev 20 yillik professional faoliyati davomida O‘zbekistonga kardioxirurgiya tibbiy buyumlarini birinchilardan bo‘lib olib kirgan, xalqaro tibbiyot ko‘rgazmalarida faol ishtirok etgan hamda yuksak insoniylik tamoyillariga asoslangan korxonalarga asos solgan yetakchi tadbirkordir.
           </p>
 
           <div class="hero-actions">
-            <a href="#about" class="btn btn-secondary">
-              <span>Men haqimda</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m6 9 6 6 6-6"/>
-              </svg>
+            <a href="#about" class="btn btn-gold">
+              <span data-i18n="hero_btn_explore">Faoliyat bilan tanishish</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </a>
-            <a href="#contact" class="btn btn-primary">
-              <span>Bog'lanish</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
+            <a href="#contact" class="btn btn-outline-navy" data-i18n="hero_btn_contact">
+              Qabulxona
             </a>
           </div>
 
-          <div class="hero-highlights">
-            <div class="highlight-item">
-              <span class="highlight-icon">📍</span>
-              <span class="highlight-text">O'zbekiston</span>
+          <!-- Quick Metrics Ribbon -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">20<span>+</span></div>
+              <div class="stat-label" data-i18n="stat_years_label">Yillik sohaviy tajriba</div>
             </div>
-            <div class="highlight-divider">•</div>
-            <div class="highlight-item">
-              <span class="highlight-icon">🎂</span>
-              <span class="highlight-text">10.11.1994</span>
+            <div class="stat-item">
+              <div class="stat-number">2</div>
+              <div class="stat-label" data-i18n="stat_companies_label">Yetakchi korxona</div>
             </div>
-            <div class="highlight-divider">•</div>
-            <div class="highlight-item">
-              <span class="highlight-icon">💊</span>
-              <span class="highlight-text">Sog'liqni saqlash</span>
+            <div class="stat-item">
+              <div class="stat-number">35</div>
+              <div class="stat-label" data-i18n="stat_team_label">Xodimdan iborat jamoa</div>
             </div>
-            <div class="highlight-divider">•</div>
-            <div class="highlight-item">
-              <span class="highlight-icon">📈</span>
-              <span class="highlight-text">Biznes boshqaruvi</span>
+            <div class="stat-item">
+              <div class="stat-number">1<span>-bo‘lib</span></div>
+              <div class="stat-label" data-i18n="stat_pioneer_label">Kardioxirurgiya ta'minoti kashshofi</div>
             </div>
           </div>
         </div>
 
-        <!-- Profile Image Card -->
-        <div class="hero-visual">
-          <div class="profile-card">
-            <div class="profile-glow"></div>
-            <div class="profile-frame">
-              <div class="profile-image-wrapper">
-                <img src="profile.jpg" alt="Beshimov Behruz Murtazo o'g'li" class="profile-photo" loading="eager">
-              </div>
-            </div>
-
-            <!-- Floating Mini Card -->
-            <div class="floating-badge">
-              <div class="floating-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                  <path d="m9 12 2 2 4-4"/>
-                </svg>
-              </div>
-              <div class="floating-info">
-                <span class="floating-title">Ishonchli xizmat</span>
-                <span class="floating-sub">Sifat va mas'uliyat</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 2. ABOUT ME SECTION -->
-    <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Tanishing</span>
-          <h2 class="section-title">Men haqimda</h2>
-          <div class="section-line"></div>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card main-about">
-            <div class="about-lead">
-              <div class="lead-icon-box">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-                </svg>
-              </div>
-              <h3 class="about-heading">Sog'liqni saqlash va biznes uyg'unligi</h3>
-            </div>
+        <!-- Visual / Portrait Column -->
+        <div class="hero-visual fade-up">
+          <div class="portrait-frame-wrapper">
+            <div class="portrait-glow-ring"></div>
             
-            <p class="about-text">
-              Men, <strong>Beshimov Behruz Murtazo o'g'li</strong> (1994-yil 10-noyabrda tug'ilganman), farmatsevtika va biznes boshqaruvi yo'nalishlarida ko'p yillik amaliy tajribaga ega mutaxassisman. Faoliyatim davomida insonlar salomatligini asrash va ularga yuqori darajada sifatli xizmat ko'rsatishni asosiy burch deb bilaman.
-            </p>
+            <div class="portrait-card">
+              <div class="portrait-image-container">
+                <!-- Professional Portrait with reliable fallback -->
+                <img 
+                  src="assets/jasur-turdiev.jpg" 
+                  alt="Jasur Turdiev - Asoschi va Rahbar"
+                  loading="eager"
+                  onerror="this.onerror=null;this.src='assets/portrait-placeholder.svg';"
+                >
+                <div class="portrait-overlay">
+                  <div class="portrait-title-name" data-i18n="portrait_title">Jasur Turdiev</div>
+                  <div class="portrait-title-caption" data-i18n="portrait_caption">Asoschi va Boshqaruvchi direktor · O‘zbekiston</div>
+                </div>
+              </div>
+            </div>
 
-            <p class="about-text">
-              Shuningdek, men <strong>sog'liqni saqlash, biznes boshqaruvi, zamonaviy axborot texnologiyalari va shaxsiy rivojlanish</strong> yo'nalishlariga chuqur qiziqaman. Har bir loyihada jarayonlarni to'g'ri tashkil etish, sifatli xizmat ko'rsatish va odamlar hayotiga haqiqiy foyda keltiradigan yechimlarni taqdim etishga intilaman.
+            <!-- Floating Badges for Luxury Brand Feel -->
+            <div class="floating-badge badge-top-left">
+              <div class="badge-icon-box">
+                <!-- Heart / Cardiology SVG Icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              </div>
+              <div>
+                <div class="badge-text-title" data-i18n="badge_cardiac_title">Kardioxirurgiya</div>
+                <div class="badge-text-sub" data-i18n="badge_cardiac_sub">Ta'minot kashshofi</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right">
+              <div class="badge-icon-box">
+                <!-- Globe / World Medical Expo Icon -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </div>
+              <div>
+                <div class="badge-text-title" data-i18n="badge_expo_title">Xalqaro anjumanlar</div>
+                <div class="badge-text-sub" data-i18n="badge_expo_sub">Xalqaro delegat</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 2: ABOUT
+       ======================================================================== -->
+  <section id="about" class="section-spacing bg-white about-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="about_tag">Jasur Turdiev haqida</span>
+        <h2 class="section-title" data-i18n="about_title">Tajribaga tayangan, ezgu maqsad sari intiluvchan</h2>
+        <p class="section-subtitle" data-i18n="about_subtitle">
+          Markaziy Osiyoda farmatsevtika va ilg‘or tibbiy texnologiyalarni joriy etishga bag‘ishlangan 20 yillik yo‘l.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Narrative Column -->
+        <div class="about-narrative fade-up">
+          <p class="about-lead" data-i18n="about_lead">
+            «Barqaror sog‘liqni saqlash tizimi yuksak klinik innovatsiyalar va mustahkam axloqiy mas'uliyat birlashgandagina yuksaladi.»
+          </p>
+
+          <p class="about-text" data-i18n="about_p1">
+            Jasur Turdiev — 20 yillik professional tajribaga ega bo‘lgan O‘zbekistonlik farmatsevtika va tibbiy texnologiyalar sohasidagi yetakchi tadbirkor. Mamlakatimizda tibbiy xizmat sifatini yangi bosqichga ko‘tarish yo‘lida u shifokorlar va shifoxonalarga eng zarur dori vositalari hamda murakkab tibbiy sarflov materiallarini uzluksiz yetkazib berish tizimini barpo etdi.
+          </p>
+
+          <p class="about-text" data-i18n="about_p2">
+            «Jasmina Ulug‘bek Farm» va «JASPHARM» korxonalari asoschisi sifatida Jasur jahonning yetakchi tibbiyot ishlab chiqaruvchilari bilan mahalliy tibbiyot muassasalari o‘rtasida mustahkam ko‘prik o‘rnatdi. Qadim Buxoroning boy ma'naviy qadriyatlari va milliy an'analariga tayangan holda, u o‘z faoliyatida zamonaviy tadbirkorlik tajribasi va yuksak ijtimoiy mas'uliyatni mujassam etgan.
+          </p>
+
+          <div class="about-quote-box">
+            <p class="about-quote-text" data-i18n="about_quote">
+              «Tibbiyotda tadbirkorlik shunchaki savdo-sotiq emas. Bu — inson hayotini asrash, tibbiyot muassasalari ishonchini qozonish va jamiyatga xizmat qilishdek oliy burchdir.»
             </p>
+            <div class="about-quote-author" data-i18n="about_quote_author">— Jasur Turdiev</div>
+          </div>
+        </div>
+
+        <!-- Pillars Column -->
+        <div class="about-pillars-column fade-up">
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4 data-i18n="about_pillar1_title">20 Yillik tajriba</h4>
+              <p data-i18n="about_pillar1_desc">Farmatsevtika va tibbiy asbob-uskunalar bozorida dastlabki ta'minotdan boshlab yirik milliy tarmoqlargacha bo‘lgan barqaror rivojlanish yo‘li.</p>
+            </div>
           </div>
 
-          <!-- Feature Highlights / Mini Pillars -->
-          <div class="about-features">
-            <div class="feature-box">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/>
-                  <path d="m8.5 8.5 7 7"/>
-                </svg>
-              </div>
-              <div class="feature-content">
-                <h4 class="feature-title">Farmatsevtik tajriba</h4>
-                <p class="feature-desc">Ko'p yillik kasbiy tajriba, dori vositalari sifati va tibbiy me'yorlar bo'yicha mustahkam bilim.</p>
-              </div>
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
             </div>
-
-            <div class="feature-box">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                </svg>
-              </div>
-              <div class="feature-content">
-                <h4 class="feature-title">Foydali yechimlar</h4>
-                <p class="feature-desc">Mijozlar va bemorlarga samarali, qulay va ishonchli xizmat ko'rsatishga qat'iy e'tibor.</p>
-              </div>
+            <div class="pillar-content">
+              <h4 data-i18n="about_pillar2_title">Kardioxirurgiya ta'minoti kashshofi</h4>
+              <p data-i18n="about_pillar2_desc">O‘zbekistondagi kardiojarrohlarni eng murakkab amaliyotlar uchun zarur bo‘lgan maxsus sarflov materiallari bilan birinchilardan bo‘lib ta'minlash tashabbusi.</p>
             </div>
+          </div>
 
-            <div class="feature-box">
-              <div class="feature-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                </svg>
-              </div>
-              <div class="feature-content">
-                <h4 class="feature-title">Biznes va innovatsiya</h4>
-                <p class="feature-desc">Zamonaviy boshqaruv uslublari va raqamli vositalar orqali biznes samaradorligini oshirish.</p>
-              </div>
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="pillar-content">
+              <h4 data-i18n="about_pillar3_title">Insonparvar rahbarlik</h4>
+              <p data-i18n="about_pillar3_desc">35 nafar xodimdan iborat jamoaga otaona g‘amxo‘rligi, ustozlik murabbiyligi va muhtojlarga doimiy ko‘mak ko‘rsatish tamoyili.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 3. MY WORK SECTION -->
-    <section class="section work-section" id="work">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Yo'nalishlar</span>
-          <h2 class="section-title">Mening faoliyatim</h2>
-          <div class="section-line"></div>
-          <p class="section-description">O'z faoliyatimda tibbiyot bilimlari, biznes strategiyasi va yangi texnologiyalarni uyg'unlashtiraman.</p>
+  <!-- ========================================================================
+       SECTION 3: EXPERIENCE
+       ======================================================================== -->
+  <section id="experience" class="section-spacing experience-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="exp_tag">Kasbiy bosqichlar</span>
+        <h2 class="section-title" data-i18n="exp_title">Tibbiyot sohasida 20 yillik samarali faoliyat</h2>
+        <p class="section-subtitle" data-i18n="exp_subtitle">
+          Ilk tibbiy buyumlar importidan tortib dunyoning eng nufuzli anjumanlarigacha.
+        </p>
+      </div>
+
+      <!-- Experience Banner -->
+      <div class="experience-hero-banner fade-up">
+        <div>
+          <h3 class="experience-banner-title" data-i18n="exp_banner_title">Tibbiy ta'minotdagi tarixiy qadamlar</h3>
+          <p class="experience-banner-text" data-i18n="exp_banner_desc">
+            20 yillik faoliyati davomida Jasur Turdiev O‘zbekiston sog‘liqni saqlash tizimining rivojlanishiga bevosita hissa qo‘shdi. Yurak-qon tomir jarrohligida xalqaro talablarga javob beradigan asboblarga bo‘lgan ehtiyojni teran anglab, ochiq yurak operatsiyalarini xavfsiz o‘tkazish uchun zarur sarflov materiallari ta'minotini birinchilardan bo‘lib yo‘lga qo‘ydi.
+          </p>
+        </div>
+        <div class="experience-banner-stats">
+          <div class="exp-stat-box">
+            <div class="exp-stat-number">20</div>
+            <div class="exp-stat-label" data-i18n="exp_banner_stat1_label">Yil faoliyat</div>
+          </div>
+          <div class="exp-stat-box">
+            <div class="exp-stat-number">100%</div>
+            <div class="exp-stat-label" data-i18n="exp_banner_stat2_label">Sifat kafolati</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strategic Experience Cards -->
+      <div class="milestones-grid">
+        <!-- Milestone 1: Cardiac Surgery Pioneering -->
+        <div class="milestone-card fade-up">
+          <div class="milestone-header">
+            <div class="milestone-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </div>
+            <span class="milestone-period" data-i18n="exp_card1_period">Tarixiy tashabbus</span>
+          </div>
+          <h3 class="milestone-title" data-i18n="exp_card1_title">Kardioxirurgiya buyumlarini joriy etish</h3>
+          <p class="milestone-desc" data-i18n="exp_card1_desc">
+            Jasur O‘zbekistonga kardioxirurgiya tibbiy buyumlarini birinchilardan bo‘lib olib kirgan mutaxassislardan biridir. U yurak jarrohligi uchun zarur bo‘lgan maxsus kateterlar, oksigenatorlar, sun'iy qon aylantirish sarflov materiallari va nozik jarrohlik anjomlarini yetkazib berib, mamlakatimiz kardiojarrohlik markazlariga beminnat xizmat qildi.
+          </p>
+          <div class="milestone-tags">
+            <span class="milestone-tag">Kardiologiya</span>
+            <span class="milestone-tag">Jarrohlik logistikasi</span>
+            <span class="milestone-tag">Hayotiy ta'minot</span>
+          </div>
         </div>
 
-        <div class="cards-grid">
-          <!-- Card 1: Pharmacy & Healthcare -->
-          <div class="work-card">
-            <div class="card-icon-wrapper">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="18" height="18" x="3" y="3" rx="4"/>
-                <path d="M12 8v8"/>
-                <path d="M8 12h8"/>
-              </svg>
+        <!-- Milestone 2: International Exhibitions -->
+        <div class="milestone-card fade-up">
+          <div class="milestone-header">
+            <div class="milestone-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
             </div>
-            <div class="card-badge">Asosiy soha</div>
-            <h3 class="card-title">Farmatsevtika va Sog'liqni saqlash</h3>
-            <p class="card-text">
-              Dori vositalarini to'g'ri qo'llash, farmatsevtika sohasida sifat nazorati va aholi salomatligini muhofaza qilishda ishonchli yondashuv.
+            <span class="milestone-period" data-i18n="exp_card2_period">Xalqaro aloqalar</span>
+          </div>
+          <h3 class="milestone-title" data-i18n="exp_card2_title">Xalqaro tibbiyot ko‘rgazmalari</h3>
+          <p class="milestone-desc" data-i18n="exp_card2_desc">
+            Jasur dunyoning eng yirik va nufuzli xalqaro ko‘rgazmalari — Germaniyadagi «Medica», Birlashgan Arab Amirliklaridagi «Arab Health», jahon farmatsevtika forumi «CPhI» hamda boshqa yirik tibbiyot anjumanlarida muntazam ishtirok etib, O‘zbekistonga eng so‘nggi innovatsiyalarni olib kelmoqda.
+          </p>
+          <div class="milestone-tags">
+            <span class="milestone-tag">Medica Germany</span>
+            <span class="milestone-tag">Arab Health Dubai</span>
+            <span class="milestone-tag">Global Networking</span>
+          </div>
+        </div>
+
+        <!-- Milestone 3: Distribution & Standards -->
+        <div class="milestone-card fade-up">
+          <div class="milestone-header">
+            <div class="milestone-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>
+            </div>
+            <span class="milestone-period" data-i18n="exp_card3_period">2004 – Hozirgacha</span>
+          </div>
+          <h3 class="milestone-title" data-i18n="exp_card3_title">Sifat nazorati va zamonaviy logistika</h3>
+          <p class="milestone-desc" data-i18n="exp_card3_desc">
+            20 yillik amaliy tajribaga tayanib, dori vositalari va tibbiy buyumlarni saqlashda xalqaro GDP (Yaxshi tarqatish amaliyoti) talablari va uzluksiz sovuqlik zanjirini (cold-chain) joriy etdi. Har bir mahsulotning sertifikatlangan va xavfsiz bo‘lishiga alohida e'tibor qaratiladi.
+          </p>
+          <div class="milestone-tags">
+            <span class="milestone-tag">GDP talablari</span>
+            <span class="milestone-tag">Cold-chain</span>
+            <span class="milestone-tag">Sertifikatsiya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 4: COMPANIES
+       ======================================================================== -->
+  <section id="companies" class="section-spacing companies-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="comp_tag">Asos solingan korxonalar</span>
+        <h2 class="section-title" data-i18n="comp_title">Yetakchi kompaniyalar</h2>
+        <p class="section-subtitle" data-i18n="comp_subtitle">
+          Farmatsevtika mukammalligi va ilg‘or tibbiy texnologiyalar ta'minotiga ixtisoslashgan ikki yirik korxona.
+        </p>
+      </div>
+
+      <div class="companies-grid">
+        <!-- Company 1: Jasmina Ulug‘bek Farm -->
+        <div class="company-card fade-up">
+          <div class="company-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1000&q=80" 
+              alt="Jasmina Ulug‘bek Farm"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='assets/pharma.svg';"
+            >
+            <div class="company-card-media-overlay">
+              <span class="company-emblem-badge" data-i18n="comp1_badge">Farmatsevtika</span>
+            </div>
+          </div>
+          <div class="company-card-body">
+            <h3 class="company-brand-title" data-i18n="comp1_title">Jasmina Ulug‘bek Farm</h3>
+            <div class="company-sector" data-i18n="comp1_sector">Farmatsevtika ta'minoti va xalq salomatligi</div>
+            
+            <p class="company-summary" data-i18n="comp1_desc">
+              To‘ng‘ich farzandlari sharafiga nomlangan «Jasmina Ulug‘bek Farm» korxonasi yuksak mas'uliyat, oilaviy qadriyatlar va farmatsevtika sohasidagi ishonchlilik timsolidir. Kompaniya sifatli, sertifikatlangan dori vositalarini yetkazib berish va aholini zarur dori-darmonlar bilan ta'minlashga ixtisoslashgan.
             </p>
-            <ul class="card-list">
+
+            <ul class="company-points">
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Sifatli dori vositalari nazorati</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp1_p1">Sertifikatlangan dori vositalarini hududlar bo‘ylab ishonchli yetkazib berish.</span>
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Professional maslahat va xizmat</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp1_p2">Harorat va saqlash sharoitlariga qat'iy amal qilinadigan zamonaviy omborlar.</span>
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Tibbiy standartlarga rioya etish</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp1_p3">Har bir bemorga g‘amxo‘rlik va dori vositalarining hamyonbopligi.</span>
               </li>
             </ul>
-          </div>
 
-          <!-- Card 2: Business Development -->
-          <div class="work-card">
-            <div class="card-icon-wrapper">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 3v18h18"/>
-                <path d="m19 9-5 5-4-4-3 3"/>
-              </svg>
+            <div class="company-footer">
+              <div class="company-founder-role" data-i18n="comp1_role">Vazifasi: <span>Asoschi va Rahbar</span></div>
+              <a href="#contact" class="btn-text">
+                <span data-i18n="comp_inquire">Murojaat qilish</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
             </div>
-            <div class="card-badge">Boshqaruv</div>
-            <h3 class="card-title">Biznesni rivojlantirish</h3>
-            <p class="card-text">
-              Jarayonlarni optimallashtirish, jamoa bilan ishlash, mijozlarga xizmat ko'rsatish sifatini oshirish va barqaror o'sishni ta'minlash.
-            </p>
-            <ul class="card-list">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Jarayonlarni tizimlashtirish</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Mijozlar bilan mustahkam aloqa</span>
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Strategik rejalashtirish</span>
-              </li>
-            </ul>
           </div>
+        </div>
 
-          <!-- Card 3: AI & Technology -->
-          <div class="work-card">
-            <div class="card-icon-wrapper">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="16" height="16" x="4" y="4" rx="2"/>
-                <rect width="6" height="6" x="9" y="9" rx="1"/>
-                <path d="M15 2v2"/>
-                <path d="M15 20v2"/>
-                <path d="M2 15h2"/>
-                <path d="M2 9h2"/>
-                <path d="M20 15h2"/>
-                <path d="M20 9h2"/>
-                <path d="M9 2v2"/>
-                <path d="M9 20v2"/>
-              </svg>
+        <!-- Company 2: JASPHARM -->
+        <div class="company-card fade-up">
+          <div class="company-card-media">
+            <img 
+              src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80" 
+              alt="JASPHARM"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='assets/cardiology.svg';"
+            >
+            <div class="company-card-media-overlay">
+              <span class="company-emblem-badge" data-i18n="comp2_badge">Tibbiy texnologiyalar</span>
             </div>
-            <div class="card-badge">Kelajak</div>
-            <h3 class="card-title">AI va Texnologiyalar</h3>
-            <p class="card-text">
-              Sun'iy intellekt va raqamli innovatsiyalarni kundalik ish faoliyati va boshqaruv jarayonlariga samarali integratsiya qilish.
+          </div>
+          <div class="company-card-body">
+            <h3 class="company-brand-title" data-i18n="comp2_title">JASPHARM</h3>
+            <div class="company-sector" data-i18n="comp2_sector">Zamonaviy tibbiy uskunalar va jarrohlik yechimlari</div>
+            
+            <p class="company-summary" data-i18n="comp2_desc">
+              «JASPHARM» — O‘zbekistonda ilg‘or tibbiy texnologiyalar, yuqori aniqlikdagi jarrohlik uskunalari va kardioxirurgiya sarflov materiallarini yetkazib beruvchi yetakchi kompaniyalardan biridir. Korxona jarrohlarni eng zamonaviy vositalar bilan qurollantirib, insonlar hayotini asrashga ko‘maklashadi.
             </p>
-            <ul class="card-list">
+
+            <ul class="company-points">
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Avtomatlashtirish va samaradorlik</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp2_p1">Kardioxirurgiya to‘plamlari, bir martalik sarflov buyumlari va qon-tomir vositalari.</span>
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Zamonaviy raqamli vositalar</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp2_p2">Xalqaro obro‘li ishlab chiqaruvchilar bilan to‘g‘ridan-to‘g‘ri shartnomalar.</span>
               </li>
               <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Tezkor va aniq qarorlar qabul qilish</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                <span data-i18n="comp2_p3">Shoshilinch jarrohlik ehtiyojlari uchun tezkor va uzluksiz ta'minot.</span>
               </li>
             </ul>
+
+            <div class="company-footer">
+              <div class="company-founder-role" data-i18n="comp2_role">Vazifasi: <span>Asoschi va Boshqaruvchi direktor</span></div>
+              <a href="#contact" class="btn-text">
+                <span data-i18n="comp_inquire">Murojaat qilish</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 4. MY GOALS SECTION -->
-    <section class="section goals-section" id="goals">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Intilishlar</span>
-          <h2 class="section-title">Maqsadlarim</h2>
-          <div class="section-line"></div>
-          <p class="section-description">Doimiy harakat va aniq maqsadlar — yuksak natijalarning mustahkam poydevoridir.</p>
+  <!-- ========================================================================
+       SECTION 5: LEADERSHIP
+       ======================================================================== -->
+  <section id="leadership" class="section-spacing leadership-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="lead_tag">Yetakchilik falsafasi</span>
+        <h2 class="section-title" data-i18n="lead_title">Saxovat va g‘amxo‘rlikka asoslangan rahbarlik</h2>
+        <p class="section-subtitle" data-i18n="lead_subtitle">
+          35 nafar mutaxassisdan iborat ahil jamoani boshqarish va muhtoj insonlarga doimiy ko‘mak qo‘lini cho‘zish.
+        </p>
+      </div>
+
+      <!-- Leadership Highlight Feature -->
+      <div class="leadership-highlight-grid">
+        <div class="leadership-visual-card fade-up">
+          <img 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" 
+            alt="Jamoa va rahbarlik"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='assets/team.svg';"
+          >
+          <div class="leadership-visual-overlay">
+            <div class="team-badge-overlay">
+              <div class="title" data-i18n="lead_team_title">35 Nafar fidoyi mutaxassis</div>
+              <div class="caption" data-i18n="lead_team_sub">Farmatsevtlar, logistika muvofiqlashtiruvchilari va tibbiy maslahatchilar</div>
+            </div>
+          </div>
         </div>
 
-        <div class="goals-grid">
-          <!-- Goal 1 -->
-          <div class="goal-item">
-            <div class="goal-number">01</div>
-            <div class="goal-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                <circle cx="9" cy="7" r="4"/>
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-              </svg>
-            </div>
-            <h3 class="goal-title">Kasbiy o'sish</h3>
-            <p class="goal-desc">Farmatsevtika sohasidagi eng so'nggi yutuqlarni o'zlashtirish va soha yetakchisiga aylanish.</p>
-          </div>
-
-          <!-- Goal 2 -->
-          <div class="goal-item">
-            <div class="goal-number">02</div>
-            <div class="goal-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23"/>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <h3 class="goal-title">Biznes rivoji</h3>
-            <p class="goal-desc">Boshqaruvdagi loyihalarni kengaytirish, daromadli va jamiyat uchun foydali korxonalar yaratish.</p>
-          </div>
-
-          <!-- Goal 3 -->
-          <div class="goal-item">
-            <div class="goal-number">03</div>
-            <div class="goal-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
-                <path d="M6 6h10"/>
-                <path d="M6 10h10"/>
-              </svg>
-            </div>
-            <h3 class="goal-title">Ilm va bilim</h3>
-            <p class="goal-desc">Tibbiyot, menejment va texnologiya bo'yicha doimiy ravishda kitoblar va ilmiy manbalarni o'rganish.</p>
-          </div>
-
-          <!-- Goal 4 -->
-          <div class="goal-item">
-            <div class="goal-number">04</div>
-            <div class="goal-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <h3 class="goal-title">Oila va farovonlik</h3>
-            <p class="goal-desc">Oilaning tinchligi, salomatligi va baxtli kelajagi yo'lida mustahkam tayanch bo'lish.</p>
-          </div>
-
-          <!-- Goal 5 -->
-          <div class="goal-item">
-            <div class="goal-number">05</div>
-            <div class="goal-icon-box">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3 class="goal-title">Shaxsiy rivojlanish</h3>
-            <p class="goal-desc">Intizom, ma'naviyat, sog'lom turmush tarzi va dunyoqarashni har kuni mukammallashtirib borish.</p>
+        <div class="leadership-narrative fade-up">
+          <h3 data-i18n="lead_h3">Samimiyat va ochiq eshiklar siyosati</h3>
+          <p data-i18n="lead_p1">
+            Jasur Turdiev o‘z korxonalarida 35 nafar xodimdan iborat ahil jamoani boshqaradi. Uning boshqaruv uslubi an'anaviy qattiqqo‘llikdan farq qilib, samimiy mehr-oqibat, ustozona yo‘l-yo‘riq va saxovatga asoslangan. U har bir xodimga shunchaki ishchi emas, balki ezgu ishning teng huquqli a'zosi va oila a'zosi sifatida qaraydi.
+          </p>
+          <p data-i18n="lead_p2">
+            O‘z hududida va kasbdoshlari orasida saxiy va saxovatpesha inson sifatida e'tirof etilgan Jasur, yordam so‘rab kelgan hech bir insonni e'tiborsiz qoldirmaydi. Sog‘lig‘ida muammosi bo‘lgan, qiyin ahvolda qolgan oilalar va fuqarolar uchun uning eshigi doimo ochiq.
+          </p>
+          
+          <div class="leadership-quote" data-i18n="lead_quote">
+            «Haqiqiy rahbarning boyligi — uning jamoasi or-nomusi, xodimlarining rozi-rizoligi va muhtoj insonlarning og‘irini yengil qila olishidadir.»
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- 5. MY VALUES SECTION -->
-    <section class="section values-section" id="values">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Tamoyillar</span>
-          <h2 class="section-title">Qadriyatlarim</h2>
-          <div class="section-line"></div>
-          <p class="section-description">Mening hayotim va faoliyatim ushbu to'rtta muhim poydevor ustiga qurilgan.</p>
+      <!-- 4 Core Leadership Principles -->
+      <div class="leadership-pillars-grid">
+        <div class="lead-pillar-box fade-up">
+          <div class="lead-pillar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4 class="lead-pillar-title" data-i18n="lead_p1_title">35 Kishilik jamoa</h4>
+          <p class="lead-pillar-desc" data-i18n="lead_p1_desc">Har bir xodimga hurmat, munosib ish sharoiti va kasbiy o‘sish uchun barcha imkoniyatlarni yaratish.</p>
         </div>
 
-        <div class="values-grid">
-          <!-- Value 1: Honesty -->
-          <div class="value-card">
-            <div class="value-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3 class="value-name">Halollik</h3>
-            <p class="value-description">
-              Har bir ishda, hamkorlikda va munosabatlarda mutlaq shaffoflik va to'g'riso'zlik. Halol mehnat — barakaning eng asosiy kalitidir.
+        <div class="lead-pillar-box fade-up">
+          <div class="lead-pillar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h4 class="lead-pillar-title" data-i18n="lead_p2_title">Doimiy saxovat</h4>
+          <p class="lead-pillar-desc" data-i18n="lead_p2_desc">Yordam so‘rab kelgan bemorlar va kam ta'minlangan oilalarga dori-darmon va moddiy ko‘mak ko‘rsatish.</p>
+        </div>
+
+        <div class="lead-pillar-box fade-up">
+          <div class="lead-pillar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          </div>
+          <h4 class="lead-pillar-title" data-i18n="lead_p3_title">Halol faoliyat</h4>
+          <p class="lead-pillar-desc" data-i18n="lead_p3_desc">Har bir mahsulotning sifati, qonuniy sertifikati va mijozlar ishonchiga qat'iy sodiqlik.</p>
+        </div>
+
+        <div class="lead-pillar-box fade-up">
+          <div class="lead-pillar-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h4 class="lead-pillar-title" data-i18n="lead_p4_title">Uzoqni ko‘zlagan maqsad</h4>
+          <p class="lead-pillar-desc" data-i18n="lead_p4_desc">O‘zbekiston tibbiyotiga avlodlar davomida xizmat qiladigan mustahkam poydevor yaratish.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 6: FAMILY
+       ======================================================================== -->
+  <section id="family" class="section-spacing family-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="fam_tag">Ildizlar va shaxsiy hayot</span>
+        <h2 class="section-title" data-i18n="fam_title">Meros, qadriyatlar va oila baxti</h2>
+        <p class="section-subtitle" data-i18n="fam_subtitle">
+          Shaxsiy shon-sharaf, mustahkam sadoqat va avlodlar kamoloti poydevori.
+        </p>
+      </div>
+
+      <div class="family-content-wrapper fade-up">
+        <div class="family-top-grid">
+          <div class="family-story">
+            <span class="family-origin-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="fam_origin">Buxoro viloyati, O‘zbekiston</span>
+            </span>
+            <h3 class="family-title" data-i18n="fam_h3">Peshko‘ tumanida tug‘ilgan</h3>
+            <p class="family-paragraph" data-i18n="fam_p1">
+              Jasur Turdiev <strong>1986-yil 30-avgustda</strong> O‘zbekistonning qadimiy va tabarruk zamini — Buxoro viloyatining <strong>Peshko‘ tumanida</strong> tavallud topgan. Asrlar davomida ilm-fan, halollik va mehmondo‘stlik beshigi bo‘lgan Buxoro zaminidagi tarbiya uning fe'l-atvorida mehnatsevarlik, rostgo‘ylik va insonlarga hurmat fazilatlarini shakllantirdi.
             </p>
+            <p class="family-paragraph" data-i18n="fam_p2">
+              Barcha yutuqlaridan ustun turuvchi eng buyuk baxt — uning oilasi. Jasur to‘rt nafar farzandning: <strong>Jasmina</strong>, <strong>Ulug‘bek</strong>, <strong>Samira</strong> va <strong>Robiya</strong>ning mehribon va g‘amxo‘r otasidir. Oila — uning hayot yo‘lidagi asosiy kompas va eng mustahkam suyanadigan qal'asidir.
+            </p>
+            <div class="family-legacy-callout">
+              <p data-i18n="fam_callout">
+                Uning birinchi yirik korxonasi — <strong>«Jasmina Ulug‘bek Farm»</strong> to‘ng‘ich farzandlari sharafiga atalgan. Bu esa qilinayotgan har bir ish halol bo‘lishi, farzandlar oldida ota nomiga dog‘ tushirmaslik uchun doimiy mas'uliyat va vijdon burchidir.
+              </p>
+            </div>
           </div>
 
-          <!-- Value 2: Responsibility -->
-          <div class="value-card">
-            <div class="value-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="m9 12 2 2 4-4"/>
-              </svg>
+          <!-- Heritage Media Frame -->
+          <div class="family-media-frame">
+            <img 
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1000&q=80" 
+              alt="Buxoro me'moriy merosi"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='assets/heritage.svg';"
+            >
+            <div class="family-media-overlay">
+              <div class="heritage-badge-title" data-i18n="fam_bukhara_title">Buxoro merosi</div>
+              <div class="heritage-badge-sub" data-i18n="fam_bukhara_sub">Peshko‘ tumani · Qadimiy ildizlar</div>
             </div>
-            <h3 class="value-name">Mas'uliyat</h3>
-            <p class="value-description">
-              Bemorlar salomatligi va biznes qarorlari uchun yuksak javobgarlik hissi. Har bir berilgan va'da va vazifaga vijdonan yondashish.
-            </p>
           </div>
+        </div>
 
-          <!-- Value 3: Continuous Learning -->
-          <div class="value-card">
-            <div class="value-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-              </svg>
-            </div>
-            <h3 class="value-name">Uzluksiz o'rganish</h3>
-            <p class="value-description">
-              Dunyo shiddat bilan o'zgarmoqda. Har kuni yangi bilim olish, xatolardan xulosa chiqarish va o'z sohasining ustasi bo'lishga intilish.
-            </p>
+        <!-- Four Children Strip -->
+        <div class="children-section-strip">
+          <div class="children-header">
+            <h4 data-i18n="fam_children_header">To‘rt nafar suyukli farzandning otasi</h4>
           </div>
-
-          <!-- Value 4: Helping People -->
-          <div class="value-card">
-            <div class="value-icon-circle">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-              </svg>
+          <div class="children-cards-grid">
+            <div class="child-card">
+              <div class="child-avatar-emblem">J</div>
+              <div class="child-name">Jasmina</div>
+              <div class="child-note" data-i18n="fam_c1_sub">Qizi</div>
             </div>
-            <h3 class="value-name">Insonlarga yordam berish</h3>
-            <p class="value-description">
-              Mening eng oliy maqsadim — jamiyatga, bemorlarga va atrofdagilarga foyda keltirish, ularning hayot sifatini yaxshilashdir.
-            </p>
+            <div class="child-card">
+              <div class="child-avatar-emblem">U</div>
+              <div class="child-name">Ulug‘bek</div>
+              <div class="child-note" data-i18n="fam_c2_sub">O‘g‘li</div>
+            </div>
+            <div class="child-card">
+              <div class="child-avatar-emblem">S</div>
+              <div class="child-name">Samira</div>
+              <div class="child-note" data-i18n="fam_c3_sub">Qizi</div>
+            </div>
+            <div class="child-card">
+              <div class="child-avatar-emblem">R</div>
+              <div class="child-name">Robiya</div>
+              <div class="child-note" data-i18n="fam_c4_sub">Qizi</div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- 6. CONTACT SECTION (Digital Business Card) -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Aloqa</span>
-          <h2 class="section-title">Bog'lanish</h2>
-          <div class="section-line"></div>
-          <p class="section-description">Savollaringiz, takliflaringiz yoki hamkorlik uchun men bilan bemalol bog'lanishingiz mumkin.</p>
-        </div>
+  <!-- ========================================================================
+       SECTION 7: CONTACT
+       ======================================================================== -->
+  <section id="contact" class="section-spacing contact-section">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag" data-i18n="contact_tag">Rasmiy murojaat</span>
+        <h2 class="section-title" data-i18n="contact_title">Bog‘lanish</h2>
+        <p class="section-subtitle" data-i18n="contact_subtitle">
+          Hamkorlik, tibbiy texnologiyalar yetkazib berish yoki rasmiy takliflar bo‘yicha bog‘laning.
+        </p>
+      </div>
 
-        <div class="contact-wrapper">
-          <!-- Digital Business Card -->
-          <div class="digital-card">
-            <div class="card-header-bar">
-              <div class="card-brand">
-                <span class="avatar-mini">B</span>
-                <div>
-                  <h4 class="card-user-name">Beshimov Behruz Murtazo o'g'li</h4>
-                  <p class="card-user-role">Farmatsevt & Biznes Menejer</p>
-                </div>
+      <div class="contact-layout-grid">
+        <!-- Contact Info Column -->
+        <div class="contact-info-panel fade-up">
+          <h3 class="contact-headline" data-i18n="contact_headline">Rasmiy qabulxona</h3>
+          <p class="contact-subtext" data-i18n="contact_subtext">
+            Jasur Turdiev va uning jamoasi O‘zbekiston hamda Markaziy Osiyo bo‘ylab tibbiyot sohasidagi hamkorlik, tajriba almashish va yangi loyihalarni muhokama qilishga doimo tayyor.
+          </p>
+
+          <div class="contact-channels-list">
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
-              <span class="card-location-tag">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                O'zbekiston
-              </span>
-            </div>
-
-            <div class="contact-links-grid">
-              <!-- Telegram Button -->
-              <div class="contact-item">
-                <div class="contact-icon tg-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="22" y1="2" x2="11" y2="13"/>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                  </svg>
-                </div>
-                <div class="contact-details">
-                  <span class="contact-label">Telegram</span>
-                  <a href="https://t.me/Bekk2225" target="_blank" rel="noopener noreferrer" class="contact-value link">@Bekk2225</a>
-                </div>
-                <a href="https://t.me/Bekk2225" target="_blank" rel="noopener noreferrer" class="btn-action" title="Telegramda yozish">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                </a>
-              </div>
-
-              <!-- Phone Button -->
-              <div class="contact-item">
-                <div class="contact-icon phone-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                  </svg>
-                </div>
-                <div class="contact-details">
-                  <span class="contact-label">Telefon raqam</span>
-                  <a href="tel:+998994072225" class="contact-value link">+998 (99) 407-22-25</a>
-                </div>
-                <button class="btn-action copy-btn" data-copy="+998994072225" title="Raqamni nusxalash">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                </button>
-              </div>
-
-              <!-- Email Button -->
-              <div class="contact-item">
-                <div class="contact-icon email-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect width="20" height="16" x="2" y="4" rx="2"/>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-                  </svg>
-                </div>
-                <div class="contact-details">
-                  <span class="contact-label">Elektron pochta</span>
-                  <a href="mailto:Beshimovbexruz950@gmail.com" class="contact-value link">Beshimovbexruz950@gmail.com</a>
-                </div>
-                <button class="btn-action copy-btn" data-copy="Beshimovbexruz950@gmail.com" title="Pochtani nusxalash">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                </button>
+              <div>
+                <div class="contact-label" data-i18n="contact_lbl_hq">Bosh ofis va faoliyat manzili</div>
+                <div class="contact-value" data-i18n="contact_val_hq">Toshkent va Buxoro, O‘zbekiston</div>
               </div>
             </div>
 
-            <div class="card-footer-note">
-              <span>🌿 Har bir murojaatga alohida e'tibor va hurmat bilan javob beraman.</span>
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_lbl_email">Rasmiy elektron pochta</div>
+                <div class="contact-value">office@jasurturdiev.com</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <div class="contact-label" data-i18n="contact_lbl_hours">Ish vaqti</div>
+                <div class="contact-value" data-i18n="contact_val_hours">Dushanba – Juma, 09:00 – 18:00 (GMT+5)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="office-card">
+            <div class="office-title" data-i18n="contact_note_title">Murojaatlarni ko‘rib chiqish</div>
+            <div class="office-desc" data-i18n="contact_note_desc">
+              Ushbu portal orqali yuborilgan barcha xabarlar maxfiy saqlanadi va Jasur Turdiev qabulxonasiga to‘g‘ridan-to‘g‘ri yetkaziladi.
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-brand">
-        <span class="footer-name">Beshimov Behruz<span class="dot">.</span></span>
-        <span class="footer-sub">Farmatsevt & Biznes Menejer</span>
+        <!-- Contact Form Column -->
+        <div class="contact-form-panel fade-up">
+          <form id="contactForm" autocomplete="off">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="senderName" class="form-label" data-i18n="form_lbl_name">F.I.SH. *</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Masalan: Dr. Alisher Karimov" data-i18n-ph="form_ph_name" required>
+              </div>
+              <div class="form-group">
+                <label for="senderOrg" class="form-label" data-i18n="form_lbl_org">Tashkilot / Muassasa</label>
+                <input type="text" id="senderOrg" class="form-input" placeholder="Masalan: Buxoro viloyati kardiologiya markazi" data-i18n-ph="form_ph_org">
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="senderEmail" class="form-label" data-i18n="form_lbl_email">Elektron pochta *</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="ism@tashkilot.uz" data-i18n-ph="form_ph_email" required>
+              </div>
+              <div class="form-group">
+                <label for="inquiryType" class="form-label" data-i18n="form_lbl_purpose">Murojaat mavzusi *</label>
+                <select id="inquiryType" class="form-select" required>
+                  <option value="" disabled selected data-i18n="form_opt_default">Murojaat turini tanlang</option>
+                  <option value="partnership" data-i18n="form_opt_partner">Strategik tibbiy hamkorlik</option>
+                  <option value="medtech" data-i18n="form_opt_medtech">Tibbiy texnika / Asbob-uskuna ta'minoti</option>
+                  <option value="pharma" data-i18n="form_opt_pharma">Farmatsevtika mahsulotlari tarqatish</option>
+                  <option value="exhibition" data-i18n="form_opt_expo">Ko‘rgazma va anjumanlarda ishtirok</option>
+                  <option value="community" data-i18n="form_opt_community">Ijtimoiy yordam va murojaatlar</option>
+                  <option value="other" data-i18n="form_opt_other">Boshqa rasmiy masalalar</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label" data-i18n="form_lbl_msg">Xabar matni *</label>
+              <textarea id="senderMessage" class="form-textarea" rows="4" placeholder="Murojaatingiz mazmunini yozing..." data-i18n-ph="form_ph_msg" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold form-submit-btn">
+              <span data-i18n="form_btn_submit">Xabarni yuborish</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
       </div>
-      <p class="footer-copy">
-        &copy; 2026 Beshimov Behruz Murtazo o'g'li. Barcha huquqlar himoyalangan.
-      </p>
+    </div>
+  </section>
+
+  <!-- Interactive Toast Notification -->
+  <div id="toastNotice" class="toast-notice" role="alert">
+    <div class="toast-icon">✓</div>
+    <div>
+      <strong data-i18n="toast_title">Xabar yetkazildi</strong>
+      <div style="font-size: 0.84rem; opacity: 0.85;" data-i18n="toast_desc">Tashakkur! Jasur Turdiev qabulxonasi sizning murojaatingizni qabul qildi.</div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary -->
+        <div>
+          <a href="#home" class="brand">
+            <div class="brand-monogram">JT</div>
+            <div class="brand-text">
+              <span class="brand-name" style="color: #ffffff;">JASUR TURDIEV</span>
+              <span class="brand-tagline" data-i18n="nav_brand_tagline">Tibbiyot tadbirkori</span>
+            </div>
+          </a>
+          <p class="footer-brand-summary" data-i18n="footer_summary">
+            O‘zbekistonda tibbiyot standartlarini yuksaltirish, kardioxirurgiya uskunalarini joriy etish hamda saxovat va halollik bilan xalqqa xizmat qilishga bag‘ishlangan faoliyat.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <div class="footer-column-title" data-i18n="footer_col_nav">Sayt bo‘limlari</div>
+          <ul class="footer-links-list">
+            <li><a href="#home" data-i18n="nav_home">Bosh sahifa</a></li>
+            <li><a href="#about" data-i18n="nav_about">Men haqimda</a></li>
+            <li><a href="#experience" data-i18n="nav_experience">Tajriba</a></li>
+            <li><a href="#companies" data-i18n="nav_companies">Kompaniyalar</a></li>
+            <li><a href="#leadership" data-i18n="nav_leadership">Rahbarlik</a></li>
+            <li><a href="#family" data-i18n="nav_family">Oila</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Bog‘lanish</a></li>
+          </ul>
+        </div>
+
+        <!-- Core Enterprises -->
+        <div>
+          <div class="footer-column-title" data-i18n="footer_col_biz">Korxonalar va ildizlar</div>
+          <ul class="footer-links-list">
+            <li><a href="#companies">Jasmina Ulug‘bek Farm</a></li>
+            <li><a href="#companies">JASPHARM</a></li>
+            <li><a href="#experience" data-i18n="footer_biz_pioneer">Kardioxirurgiya ta'minoti kashshofi</a></li>
+            <li><a href="#leadership" data-i18n="footer_biz_team">35 Kishilik jamoa rahbari</a></li>
+            <li><a href="#family" data-i18n="footer_biz_roots">Peshko‘ tumani, Buxoro</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div data-i18n="footer_rights">
+          &copy; 2026 Jasur Turdiev. Barcha huquqlar himoyalangan.
+        </div>
+        <div class="footer-motto" data-i18n="footer_motto">
+          Tajribali · Professional · Hurmatli · Samimiy
+        </div>
+      </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script>
-/**
- * Behruz - Shaxsiy Veb-Sayt (script.js)
- * Interaktiv funksiyalar: Mobil menyu, silliq aylantirish, nusxalash xabarnomasi va faol havolalar.
- */
-
-document.addEventListener('DOMContentLoaded', () => {
-  // --- 1. Elementlarni tanlash ---
-  const navbar = document.getElementById('navbar');
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const copyButtons = document.querySelectorAll('.copy-btn');
-  const toast = document.getElementById('toast');
-
-  // --- 2. Mobil Menyuni Boshqarish ---
-  if (navToggle && navMenu) {
-    navToggle.addEventListener('click', () => {
-      const isOpen = navMenu.classList.toggle('open');
-      navToggle.classList.toggle('open', isOpen);
-      navToggle.setAttribute('aria-expanded', isOpen);
-    });
-
-    // Menyu bandi bosilganda mobil menyuni yopish
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (navMenu.classList.contains('open')) {
-          navMenu.classList.remove('open');
-          navToggle.classList.remove('open');
-          navToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
-
-    // Sahifaning boshqa joyi bosilganda menyuni yopish
-    document.addEventListener('click', (e) => {
-      if (!navbar.contains(e.target) && navMenu.classList.contains('open')) {
-        navMenu.classList.remove('open');
-        navToggle.classList.remove('open');
-        navToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-
-  // --- 3. Skroll paytida Navbarni soya bilan bezash ---
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      navbar.classList.add('scrolled');
-    } else {
-      navbar.classList.remove('scrolled');
-    }
-  });
-
-  // --- 4. Faol bo'limni belgilash (Active Section Spy) ---
-  const sections = document.querySelectorAll('section[id]');
-  
-  const highlightNavLink = () => {
-    const scrollY = window.pageYOffset;
-
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 120;
-      const sectionId = current.getAttribute('id');
-      const targetLink = document.querySelector(`.nav-link[href*="#${sectionId}"]`);
-
-      if (targetLink) {
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          targetLink.classList.add('active');
-        } else {
-          targetLink.classList.remove('active');
-        }
-      }
-    });
-  };
-
-  window.addEventListener('scroll', highlightNavLink);
-
-  // --- 5. Nusxalash funksiyasi (Copy to Clipboard + Toast) ---
-  let toastTimeout = null;
-
-  const showToast = (message = 'Nusxalandi!') => {
-    if (!toast) return;
-    toast.textContent = message;
-    toast.classList.add('show');
-
-    if (toastTimeout) {
-      clearTimeout(toastTimeout);
-    }
-
-    toastTimeout = setTimeout(() => {
-      toast.classList.remove('show');
-    }, 2500);
-  };
-
-  copyButtons.forEach(button => {
-    button.addEventListener('click', async (e) => {
-      e.preventDefault();
-      const textToCopy = button.getAttribute('data-copy');
-      
-      if (!textToCopy) return;
-
-      try {
-        if (navigator.clipboard && window.isSecureContext) {
-          await navigator.clipboard.writeText(textToCopy);
-        } else {
-          // Zaxira usul (Fallback)
-          const textArea = document.createElement('textarea');
-          textArea.value = textToCopy;
-          textArea.style.position = 'fixed';
-          textArea.style.left = '-9999px';
-          document.body.appendChild(textArea);
-          textArea.focus();
-          textArea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textArea);
-        }
-
-        // Muvaffaqiyat xabari
-        showToast(`Nusxa olindi: ${textToCopy}`);
-      } catch (err) {
-        console.error('Nusxalashda xatolik:', err);
-        showToast('Nusxalash imkoni bo\'lmadi');
-      }
-    });
-  });
-});
-
-</script>
+  <!-- Translation Dictionary & Main Script -->
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
-

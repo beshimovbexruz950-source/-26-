@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f" />
+      <stop offset="40%" stop-color="#11284a" />
+      <stop offset="100%" stop-color="#050d1a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#edd79e" />
+      <stop offset="50%" stop-color="#c5a059" />
+      <stop offset="100%" stop-color="#947130" />
+    </linearGradient>
+    <radialGradient id="ambientGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#c5a059" stop-opacity="0.25" />
+      <stop offset="70%" stop-color="#c5a059" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1000" fill="url(#bgGrad)" />
+  <circle cx="400" cy="380" r="320" fill="url(#ambientGlow)" />
+
+  <!-- Subtle Architectural Geometric Frame -->
+  <rect x="30" y="30" width="740" height="940" rx="16" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.35" />
+  <rect x="42" y="42" width="716" height="916" rx="12" fill="none" stroke="url(#goldGrad)" stroke-width="0.75" stroke-dasharray="8 6" stroke-opacity="0.25" />
+
+  <!-- Executive Silhouette Base -->
+  <g transform="translate(0, 40)">
+    <!-- Shoulders & Suit -->
+    <path d="M 190 780 C 210 650, 270 570, 340 540 L 400 590 L 460 540 C 530 570, 590 650, 610 780 C 620 840, 640 920, 640 920 L 160 920 C 160 920, 180 840, 190 780 Z" fill="#0d2240" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.4" />
+    
+    <!-- Crisp Shirt Collar & Tie -->
+    <polygon points="400,590 365,540 435,540" fill="#f8fafc" opacity="0.9" />
+    <polygon points="400,590 385,540 400,530 415,540" fill="#0a192f" />
+    <polygon points="392,590 408,590 414,750 400,780 386,750" fill="url(#goldGrad)" />
+    
+    <!-- Lapels -->
+    <path d="M 340 540 L 388 680 L 350 780" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.6" />
+    <path d="M 460 540 L 412 680 L 450 780" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.6" />
+
+    <!-- Head / Neck Silhouette -->
+    <path d="M 365 540 L 365 470 C 365 470, 360 450, 370 430 L 430 430 C 440 450, 435 470, 435 470 L 435 540 Z" fill="#152f52" />
+    <ellipse cx="400" cy="350" rx="90" ry="115" fill="#16335c" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.5" />
+
+    <!-- Stylized Hair Contour -->
+    <path d="M 315 350 C 310 240, 400 220, 480 250 C 495 280, 490 330, 490 350 C 475 320, 440 305, 400 305 C 350 305, 325 325, 315 350 Z" fill="#0c1d33" />
+  </g>
+
+  <!-- Crest Emblem -->
+  <circle cx="400" cy="180" r="54" fill="#0a192f" stroke="url(#goldGrad)" stroke-width="2.5" />
+  <circle cx="400" cy="180" r="46" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="4 3" stroke-opacity="0.5" />
+  <text x="400" y="190" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="28" font-weight="bold" fill="url(#goldGrad)" letter-spacing="2">JT</text>
+
+  <!-- Typography Labels -->
+  <text x="400" y="850" text-anchor="middle" font-family="'Playfair Display', Georgia, serif" font-size="34" font-weight="600" fill="#ffffff" letter-spacing="1">JASUR TURDIEV</text>
+  <text x="400" y="885" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="14" font-weight="600" fill="url(#goldGrad)" letter-spacing="4">EXECUTIVE PORTRAIT</text>
+</svg>
