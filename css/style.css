@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JASUR TURDIEV - EXECUTIVE PERSONAL BRAND STYLESHEET
+   TURDIEV JASURBEK JO‘RAQULOVICH - EXECUTIVE PERSONAL BRAND STYLESHEET
    Palette: White, Deep Navy Blue, Subtle Imperial Gold
    Typography: Cormorant Garamond, Playfair Display, Plus Jakarta Sans
    ========================================================================== */
@@ -1840,6 +1840,173 @@ button {
   transform: translateY(0);
 }
 
+/* --- Company Logo Containers --- */
+.company-logo-wrap {
+  background: var(--pure-white);
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  border-bottom: 1px solid var(--surface-border);
+  position: relative;
+}
+
+.company-logo-img {
+  max-height: 95px;
+  max-width: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform var(--transition-medium);
+}
+
+.company-card:hover .company-logo-img {
+  transform: scale(1.05);
+}
+
+/* --- Contact Action Buttons --- */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-link {
+  color: var(--navy-950);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.contact-link:hover {
+  color: var(--gold-600);
+}
+
+.btn-action-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  padding: 5px 14px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 20px;
+  background: rgba(197, 160, 89, 0.12);
+  border: 1px solid var(--gold-border);
+  color: var(--gold-700);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: all var(--transition-fast);
+}
+
+.btn-action-pill:hover {
+  background: var(--gold-500);
+  color: var(--navy-950);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.3);
+}
+
+/* --- Human Values Grid --- */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.value-card {
+  background: var(--pure-white);
+  border: 1px solid var(--surface-border);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: left;
+  transition: all var(--transition-medium);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-border);
+  box-shadow: var(--shadow-md);
+}
+
+.value-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: var(--navy-900);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.value-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.12rem;
+  font-weight: 600;
+  color: var(--navy-950);
+  margin-bottom: 6px;
+}
+
+.value-card-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* --- Family Parents Grid --- */
+.family-parents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.family-member-card {
+  background: rgba(10, 25, 47, 0.03);
+  border: 1px solid var(--surface-border);
+  border-radius: 10px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.family-member-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--navy-900);
+  color: var(--gold-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-accent);
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1.5px solid var(--gold-500);
+}
+
+.family-member-role {
+  font-size: 0.75rem;
+  color: var(--gold-700);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.family-member-name {
+  font-family: var(--font-serif);
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--navy-950);
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
@@ -1889,6 +2056,10 @@ button {
   }
 
   .leadership-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -2005,6 +2176,14 @@ button {
   }
 
   .leadership-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .family-parents-grid {
     grid-template-columns: 1fr;
   }
 

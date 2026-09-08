@@ -1,5 +1,5 @@
 /**
- * Jasur Turdiev - Personal Brand Website
+ * Turdiev Jasurbek Jo‘raqulovich - Personal Brand Website
  * Interactive Script: Navigation, Scrollspy, Animations, Form Handling & Language Switcher
  */
 
