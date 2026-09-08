@@ -24,7 +24,7 @@ const translations = {
     hero_badge: "Farmatsevtika va tibbiyot sohasida 20 yillik tajriba",
     hero_title: "Turdiev Jasurbek Jo‘raqulovich",
     hero_role: "Farmatsevtika va tibbiyot texnologiyalari sohasida 20 yillik tajribaga ega tadbirkor va yetakchi · <strong>JAS PHARM TRADE</strong> hamda <strong>JASPHARM DORIXONALAR TARMOG‘I</strong> asoschisi",
-    hero_description: "Jasurbek Jo‘raqulovich — O‘zbekistonga kardioxirurgiya tibbiy va jarrohlik mahsulotlarini birinchilardan bo‘lib joriy etgan, ko‘plab xalqaro tibbiyot ko‘rgazmalari ishtirokchisi hamda 35 nafar mutaxassisdan iborat jamoaga g‘amxo‘rlik bilan rahbarlik qiluvchi tajribali tadbirkor.",
+    hero_description: "Jasurbek Jo‘raqulovich — O‘zbekistonga kardioxirurgiya tibbiy va jarrohlik mahsulotlarini birinchilardan bo‘lib joriy etgan, ko‘plab xalqaro tibbiyot ko‘rgazmalari ishtirokchisi hamda 40 dan ziyod mutaxassisdan iborat jamoaga g‘amxo‘rlik bilan rahbarlik qiluvchi tajribali tadbirkor.",
     hero_btn_explore: "Faoliyat bilan tanishish",
     hero_btn_contact: "Bog‘lanish",
     stat_years_label: "Yillik sohaviy tajriba",
@@ -53,7 +53,7 @@ const translations = {
     about_pillar2_title: "Kardioxirurgiya ta'minoti kashshofi",
     about_pillar2_desc: "O‘zbekistonga yurak jarrohligi uchun zarur bo‘lgan nozik tibbiy buyumlar va sarflov materiallarini birinchilardan bo‘lib joriy etish.",
     about_pillar3_title: "G‘amxo‘r va oqil yetakchilik",
-    about_pillar3_desc: "35 nafar xodimni qo‘llab-quvvatlash, ularning mushkulini oson qilish va muhtoj insonlarga beg‘araz yordam ko‘rsatish.",
+    about_pillar3_desc: "40 dan ziyod xodimni qo‘llab-quvvatlash, ularning mushkulini oson qilish va muhtoj insonlarga beg‘araz yordam ko‘rsatish.",
 
     // Professional Experience & Medical Technology
     exp_tag: "Kasbiy tajriba",
@@ -97,12 +97,12 @@ const translations = {
 
     // Leadership Section
     lead_tag: "Yetakchilik uslubi",
-    lead_title: "35 Nafar xodimga g‘amxo‘rlik va mustahkam jamoa",
+    lead_title: "40 Dan ziyod xodimga g‘amxo‘rlik va mustahkam jamoa",
     lead_subtitle: "O‘z xodimlarini qo‘llab-quvvatlovchi, ularga yordam beruvchi va mas'uliyatli rahbar.",
-    lead_team_title: "35 Nafar malakali xodim",
+    lead_team_title: "40+ Malakali xodim",
     lead_team_sub: "Farmatsevtlar, mutaxassislar va logistika xodimlari",
     lead_h3: "Xodimlarni qadrlash va yordamga shaylik",
-    lead_p1: "Jasurbek Jo‘raqulovich 35 nafar xodimdan iborat ahil va professional jamoaga rahbarlik qiladi. U o‘z xodimlariga doimo g‘amxo‘rlik ko‘rsatuvchi, ularni har tomonlama qo‘llab-quvvatlovchi va kerak bo‘lganda beminnat yordam beruvchi oqil yetakchi sifatida tanilgan.",
+    lead_p1: "Jasurbek Jo‘raqulovich 40 dan ziyod xodimdan iborat ahil va professional jamoaga rahbarlik qiladi. U o‘z xodimlariga doimo g‘amxo‘rlik ko‘rsatuvchi, ularni har tomonlama qo‘llab-quvvatlovchi va kerak bo‘lganda beminnat yordam beruvchi oqil yetakchi sifatida tanilgan.",
     lead_p2: "Uning boshqaruvida saxovatpeshalik, mehribonlik, yuksak mas'uliyat va odamlarga ko‘mak berish asosiy tamoyillar sanaladi. Jasurbek Jo‘raqulovich insonlarga yordam berishni yaxshi ko‘radi va unga yordam so‘rab kelgan insonlarni imkon qadar qo‘llab-quvvatlashga, ularni yordamsiz qoldirmaslikka intiladi.",
     lead_quote: "«Rahbarning asosiy vazifasi — jamoasidagi har bir insonni e'zozlash, ularning mushkulini oson qilish va yordamga muhtoj kishiga doimo ochiq ko‘ngil bilan ko‘mak qo‘lini cho‘zishdir.»",
 
@@ -119,7 +119,7 @@ const translations = {
     val4_title: "Yuksak mas'uliyat",
     val4_desc: "Har bir ishni, yetkazib berilayotgan tibbiy vositani va xalq salomatligini oliy mas'uliyat deb bilish.",
     val5_title: "Xodimlarga g‘amxo‘rlik",
-    val5_desc: "35 nafar jamoa a'zosining farovonligi, ish sharoiti va muammolariga doimo befarq bo‘lmaslik.",
+    val5_desc: "40 dan ziyod jamoa a'zosining farovonligi, ish sharoiti va muammolariga doimo befarq bo‘lmaslik.",
     val6_title: "Yetakchilik",
     val6_desc: "O‘z bilimi, 20 yillik tajribasi va shaxsiy namunasi bilan jamoani ulug‘vor maqsadlar sari boshlash.",
     val7_title: "Hurmat va ehtirom",
@@ -186,7 +186,7 @@ const translations = {
     footer_biz_trade: "JAS PHARM TRADE",
     footer_biz_apteki: "JASPHARM DORIXONALAR TARMOG‘I",
     footer_biz_pioneer: "Kardioxirurgiya ta'minoti kashshofi",
-    footer_biz_team: "35 Kishilik jamoa rahbari",
+    footer_biz_team: "40+ Kishilik jamoa rahbari",
     footer_biz_roots: "Makkadid qishlog‘i, Peshko‘ tumani",
     footer_rights: "© 2026 Turdiev Jasurbek Jo‘raqulovich. Barcha huquqlar himoyalangan.",
     footer_motto: "Tajribali · Professional · Hurmatli · Samimiy"
@@ -212,7 +212,7 @@ const translations = {
     hero_badge: "20 Years of Experience in Healthcare & MedTech",
     hero_title: "Turdiev Jasurbek Jo‘raqulovich",
     hero_role: "Entrepreneur and Leader in Pharmaceuticals and Medical Technology with 20 Years of Experience · Founder of <strong>JAS PHARM TRADE</strong> and <strong>JASPHARM DORIXONALAR TARMOG‘I</strong>",
-    hero_description: "Jasurbek Jo‘raqulovich is an experienced entrepreneur who was among the first in Uzbekistan to introduce medical and surgical supplies used in cardiac surgery, actively participates in professional medical exhibitions, and leads a dedicated team of 35 employees with care and support.",
+    hero_description: "Jasurbek Jo‘raqulovich is an experienced entrepreneur who was among the first in Uzbekistan to introduce medical and surgical supplies used in cardiac surgery, actively participates in professional medical exhibitions, and leads a dedicated team of over 40 employees with care and support.",
     hero_btn_explore: "Explore Journey",
     hero_btn_contact: "Contact",
     stat_years_label: "Years of Experience",
@@ -241,7 +241,7 @@ const translations = {
     about_pillar2_title: "Cardiac Surgery Supply Pioneer",
     about_pillar2_desc: "Among the first professionals in Uzbekistan to introduce medical and surgical supplies used in cardiac surgery.",
     about_pillar3_title: "Caring & Supportive Leader",
-    about_pillar3_desc: "Leading a dedicated team of 35 employees with genuine care, generosity, and support.",
+    about_pillar3_desc: "Leading a dedicated team of over 40 employees with genuine care, generosity, and support.",
 
     // Professional Experience & Medical Technology
     exp_tag: "Professional Experience",
@@ -285,12 +285,12 @@ const translations = {
 
     // Leadership Section
     lead_tag: "Leadership",
-    lead_title: "Leading a Team of 35 Employees with Care & Support",
+    lead_title: "Leading a Team of 40+ Employees with Care & Support",
     lead_subtitle: "A supportive leader who cares about his employees, helps them, and values generosity.",
-    lead_team_title: "35 Dedicated Employees",
+    lead_team_title: "40+ Dedicated Employees",
     lead_team_sub: "Pharmacists, Specialists & Logistics Coordinators",
     lead_h3: "Caring, Supportive & Generous Leadership",
-    lead_p1: "Jasurbek Jo‘raqulovich leads a team of 35 employees. He is known as a caring and supportive leader who cares about his employees, supports them, and helps them when they need assistance.",
+    lead_p1: "Jasurbek Jo‘raqulovich leads a team of over 40 employees. He is known as a caring and supportive leader who cares about his employees, supports them, and helps them when they need assistance.",
     lead_p2: "He values generosity, kindness, responsibility, and helping people. Jasurbek Jo‘raqulovich likes helping people: when people come to him asking for help, he tries not to turn them away and supports them whenever possible.",
     lead_quote: "“A leader's true wealth is reflected in the well-being of his team and the hands he is able to lift when people come seeking assistance.”",
 
@@ -307,7 +307,7 @@ const translations = {
     val4_title: "Responsibility",
     val4_desc: "Treating every medical product and every human life with the utmost moral accountability.",
     val5_title: "Care for Employees",
-    val5_desc: "Attentive support for all 35 team members, championing their well-being and growth.",
+    val5_desc: "Attentive support for over 40 team members, championing their well-being and growth.",
     val6_title: "Leadership",
     val6_desc: "Leading by personal example, 20 years of experience, and clear vision.",
     val7_title: "Respect",
@@ -374,7 +374,7 @@ const translations = {
     footer_biz_trade: "JAS PHARM TRADE",
     footer_biz_apteki: "JASPHARM DORIXONALAR TARMOG‘I",
     footer_biz_pioneer: "Cardiac Surgery Supply Pioneer",
-    footer_biz_team: "Leader of 35 Employees",
+    footer_biz_team: "Leader of 40+ Employees",
     footer_biz_roots: "Makkadid village, Peshko‘ District",
     footer_rights: "© 2026 Turdiev Jasurbek Jo‘raqulovich. All rights reserved.",
     footer_motto: "Experienced · Professional · Respected · Human"
